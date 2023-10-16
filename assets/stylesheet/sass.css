@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > .earth {
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/[fpdl.in]_grey-world-map_1053-431_full.jpg);
+  background-size: 500px;
+  border-radius: 50%;
+  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+  animation: earth 5s infinite linear;
+  transform-style: preserve-3d;
+  border: 1px solid gray;
+}
+
+@keyframes earth {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}/*# sourceMappingURL=sass.css.map */
